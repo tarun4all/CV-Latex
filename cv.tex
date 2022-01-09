@@ -1,0 +1,188 @@
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+\documentclass[10pt,a4paper,ragged2e]{maltacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages.
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+% Change the font if you want to
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% \usepackage[default]{lato}
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+
+\usepackage{setspace}
+\usepackage{mathpazo}
+\usepackage{textcomp}
+\usepackage{multicol}
+
+% Color schemes:
+% raisinblack_flame
+% darkpurple_princetonorange
+% blue_claret
+% eerieblack_eggplant
+% outerspace_forestgreen   
+% raisinblack_midnightgreen
+% teal_brown
+% indigo
+% blue
+% violet
+% you can set your custom colors with:
+% \definecolor{AccentBody}{HTML}{002642}
+% \definecolor{Primary}{HTML}{840032}
+% \colorlet{primary}{Primary}
+% \colorlet{accent_body}{AccentBody}
+
+% this is my favourite but change it as you like
+\setcolorscheme{eerieblack_eggplant}
+\setlength\multicolsep{0pt}
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+
+%% sample.bib contains your publications
+%% NOT SUPPORTED YET
+% \addbibresource{sample.bib}
+
+\name{Tarun Bansal}
+\firstname{Tarun}
+\familyname{Bansal}
+
+\begin{document}
+\tagline{Software Engineer}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{officialtarunbansal@gmail.com}
+  % \birthday{25\textsuperscript{th} Dec 0}
+  % \homepage{www.homepage.com/}
+  % \twitter{@twitterhandle}
+  \linkedin{officialtarun}
+  \github{tarun4all}
+  \location{New Delhi, India}
+  \phone{+91 9650849625}
+  \graduation{BCA}
+}
+
+\bio{3+ years of experience solving engineering problems. 1+ years of experience writing Go code in production. 3+ years of experience writing JavaScript code. Deft at reverse engineering. Adept at writing testable, modular and simple code.}
+
+\makecvheader
+
+\cvsection{Experience}
+
+\cvexperience{Software Engineer}{Sourcefuse Technologies}{Jan 2021 - Present}{New Delhi, DL, India}{Golang, JavaScript, React, Redux, NodeJS}
+\begin{itemize}
+  \item Implemented pipeline for Sonarqube scan, ES Lint check for build and TODO List based on comments .
+  \item Worked on Scalable component for Rakuten A2P.  
+  \item Created common theme components for resume in All Rakuten Products and to Handle material UI version upgrade
+  \item Worked on Test cases based on User Role.
+  \item Worked on TDD for new Features and approach.
+  \item Worked on Golang Service for Analytics in
+  \href{https://privatewealthsystems.com/}{PWS}
+\end{itemize}
+
+\cvexperience{Full Stack Developer}{Codalien Technologies Pvt. Ltd.}{July 2019 -- Dec 2020}{New Delhi, DL, India}{Golang, JavaScript, ReactJS, NodeJS, Express, Redux, MongoDB, GraphQL}
+\begin{itemize}
+  % \item Worked on various web and mobile applications powered by latest frontend technologies.
+%   \item Developed both frontend (web and mobile) applications as well as backend services powered by latest web technologies and frameworks.
+  \item Developed GoLang Module to parse questionnaire at \href{https://yubihealth.com/}{Yubi Health}
+  \item Developed web app with Test case for Decision maker that powers questionnaire for Mental Health \href{https://yubihealth.com/}{Yubi Health's}
+  \item Created various dynamic components with reusability in mind (such as a reusable Table Group with support for server-side pagination, filtering and sorting) for data/info centric applications
+  \item Developed and integrated various REST API and GraphQL services in both backend and frontend side.
+  \item Developed payment integration(Stripe), calendar implementation, location services and authentication at Yubi Health
+  \item Assisted and lead development of admin panels and content management systems powered by KeystoneJS (Node, MongoDB, React).
+\end{itemize}
+
+\divider
+
+\cvexperience{Software Engineer}{Notifyvisitors Technologies AKA TagnPin Technologies}{Jan 2019 - June 2019}{New Delhi, DL, India}{ReactJS, Redux, EC2, S3, Linux}
+\begin{itemize}
+  % \item Worked independently as well as assisted senior developers in various coding and testing functions. 
+  \item Worked on Javscript SDK and lerna build to Integrate on other web app for different products. 
+  \item Developed Node API's for analytic and stats for Heat-map and Chat-bot. 
+  \item Build reusable component with React JS for dashboard.
+\end{itemize}
+
+\divider
+\medskip
+
+% \cvsection{Education}
+% \medskip
+% \begin{multicols}{3}
+%   \cvuniversity{B.Tech. (CSE)}{Inderprastha Engg. College (AKTU)}{2017}{Ghaziabad, UP}% last param is location
+%   % this helps if columns are not the same
+%   \vfill\null
+%   \columnbreak
+
+%   \cvuniversity{XIIth (CBSE)}{Tagore Sr. Sec. School}{ 2012 }{Mayapuri, Delhi}{}
+%   \vfill\null
+%   \columnbreak
+
+%   \cvuniversity{Xth (CBSE)}{N.C. Jindal Public School}{ 2010 }{Punjabi Bagh, Delhi}{}
+%   \vfill\null
+%   \columnbreak
+% \end{multicols}
+% \medskip
+
+
+\cvsection{Technical Skills}
+\medskip
+  % \begin{multicols}{5} % adjust #cols as needed
+    \cvtag{Docker}{}
+    \cvtag{JavaScript}{}
+    \cvtag{TypeScript}{}
+    \cvtag{ReactJS}{}
+    \cvtag{Golang}{}
+    \cvtag{React Native}{}
+    \cvtag{Redux}{}
+    \cvtag{NodeJS}{}
+    \cvtag{Express}{}
+    \cvtag{GraphQL}{}
+    \cvtag{MongoDB}{}
+    \cvtag{Redis}{}
+    \cvtag{Linux}{}
+    \cvtag{Unix}{}
+    \cvtag{Serverless}{}
+    \cvtag{AWS}{}
+    \cvtag{Git}{}
+    \cvtag{MySQL}{}
+    \cvtag{Firebase}{}
+    \cvtag{Kubernetes}{}
+    \cvtag{react-query}{}
+    \cvtag{Axios}{}
+    \cvtag{Postman}{}
+    \cvtag{SonarQube}{}
+    \cvtag{Jira}{}
+    \cvtag{Agile}{}
+    \cvtag{Confluence}{}
+    \cvtag{Material UI}{}
+    \cvtag{Ant Design}{}
+    \cvtag{Cobra}{}
+    \cvtag{Jest}{}
+    \cvtag{Enzyme}{}
+    \cvtag{Testify}{}
+    \cvtag{Webpack}{}
+  % \end{multicols}
+\medskip
+\divider
+
+\cvsection{Interests}
+\begin{multicols}{3} % adjust cols as needed
+  \cvlistitem{Music}{Cigarettes after sex, The Strumbellas}
+  \cvlistitem{Alexa Automation}{Zoom Integration, Login/Logout, Github Task List}
+  \cvlistitem{Video Games}{CS:GO, GTA, Watchdogs}
+\end{multicols}
+
+% try to keep it on one page only !
+\end{document}
